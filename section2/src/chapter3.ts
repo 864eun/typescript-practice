@@ -17,7 +17,7 @@ let user2:{
 
 //위와 같이 표시해야 점 표기법으로 속성에 접근이 가능
 
-//선택적 값
+//선택적 프로퍼티(Optional Property)
 //아래와 같이 속성의 값을 선택적으로 입력하고 싶은 경우 "?"를 붙여준다 
 let user3:{
     id?:number; 
@@ -28,4 +28,17 @@ let user3:{
 
 user3 = {
     name:"김콩쥐"
-}
+};
+
+//읽기전용 프로퍼티(Readonly Property)
+//속성 값을 변경하지 못하게 해야하는 경우 "readonly"를 붙여 읽기 전용으로 변경할 수 있다.
+let user4: {
+    id?: number;
+    readonly name: string; // name은 이제 Readonly 프로퍼티가 되었음
+  } = {
+    id: 1,
+    name: "이정환",
+  };
+  
+//   user4.name = "dskfd"; // 오류 발생
+
