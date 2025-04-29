@@ -40,6 +40,7 @@ type Animal1 = {
   }
 
 //다중 확장
+//여러 인터페이스를 한 번에 확장 가능.
 interface DogCat extends Chicken, Cat {}
 
 const dogCat: DogCat = {
