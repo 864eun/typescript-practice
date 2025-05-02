@@ -28,6 +28,7 @@ interface Person1 {
   age: number;
 }
 
+//Person의 키를 문자열로 받아서 유니언으로 만든다 -> Person1의 프로퍼티만 받는다.
 function getPropertyKey(person: Person1, key: keyof typeof person) {
   return person[key];
 }
